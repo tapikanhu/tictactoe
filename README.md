@@ -7,12 +7,44 @@ Programs contains 3 files
    - this is the base html for the project
    - Some of the styling is done using bootstraps
    - Game is implemented by adding a 3 x 3 grid of buttons which are the game board
+   - Some of the paragraphs in the HTML are filled in using javascript results
      
 2. style.css
    - includes the css to style the game
   
 3. script.js
-   - Includes the javascript for the project
-   - The javascript includes logic to start game, reset game, playgame, check for wins (horizintally, vertically and diagonally), check for ties, keep scores, display scores and winners.
+The JavaScript code for the project includes the following functionalities:
+
+Starting and Resetting the Game:
+- The game can be started and reset using appropriate buttons or functions.
+Playing the Game:
+- Players take turns making moves by clicking on empty cells in the grid (button).
+Checking for Wins:
+- The game logic checks for wins horizontally, vertically, and diagonally after each move.
+- If a player gets three of their symbols in a row, they are declared the winner.
+Checking for Ties:
+- If all cells are filled and no player has three in a row, the game is declared a tie.
+Keeping Scores:
+- The game keeps track of scores for each player and ties.
+Displaying Scores and Winners:
+- Scores and the winner of each game are displayed to the players.
+
+Implementation Details
+The implementation details of the JavaScript code are as follows:
+
+Event Listeners:
+- The game utilizes event listeners to detect clicks on the grid cells/buttons.
+- Click events trigger the appropriate game logic functions.
+Player Selection:
+- A function rotates between the two players, ensuring each click alternates between 'X' and 'O'.
+Move Validation:
+- When a cell is clicked, the game verifies if it's empty before allowing the current player to make a move.
+Once a move is made, the board prevents the current move from being overridden by the other player.
+Winning Condition:
+- After each move, the game checks if any player has achieved three in a row horizontally, vertically, or diagonally.
+- If a win condition is met, the game declares the corresponding player as the winner, disables incomplete cells, and resets the board after 3 seconds.
+Tie Condition:
+- If all cells are filled and no player has won, the game declares a tie and records it in the score object.
+
   
   
