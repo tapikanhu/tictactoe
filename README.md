@@ -4,10 +4,9 @@
 A basic game of tic tac toe implemented in HTML, CSS and Javascript.
 Programs contains 3 files
 1. tictactoe.html
-   - this is the base html for the project
-   - Some of the styling is done using bootstraps
-   - Game is implemented by adding a 3 x 3 grid of buttons which are the game board
-   - Some of the paragraphs in the HTML are filled in using javascript results
+- This documentation outlines the base HTML structure, along with the integration of Bootstrap for styling, in the Tic-Tac-   Toe game project.
+- The game features a 3x3 grid of buttons as the game board, where players take turns placing their symbols ('X' or 'O').
+- Additionally, JavaScript dynamically updates certain paragraphs within the HTML document with game results and information.
      
 2. style.css
    - includes the css to style the game
